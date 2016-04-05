@@ -123,38 +123,5 @@ $(document).ready(function () {
 });
 
 
-//clear input 
-//REVIEW: you have defined a function that supposedly clear the user input, but is not actually being called anywhere.
-    function clearInputs(){
-        $("input[name=title]").val("");
-        var user = form.find("input[name=user]").val("");
-        var content = form.find("textarea[type=text]").val("");
-        var tag = form.find("input[name=tag]").val("");
-        // $("input[name=title]").val("");
-        // $("input[name=user]").val("");
-        // $("textarea[type=text]").val("");
-        // $("input[name=tag]").val("");
-    };
-
-// $(document).ready(function() {
-//     $('section').click(function() {
-//         alert("what");
-//         $(this).val();
-//         console.log($(this).val())
-//     })
-// })
-
-
-//     $('section').click(function() {
-//     var test=$(this).attr("data-index");
-//         alert(test);
-
-//             })
-// })
-
-
-// $(document).on('click', 'section', function() {
-//     alert($(this).attr("data-index"));
-// });
 
 
