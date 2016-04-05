@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+<!--Style Css Start-->
+<style type="text/css">
+	body{
+		width:100%;
+		background-image: url('img.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin:0 auto;
+		text-align: center;
+		color:grey;
+	}
+	.item{
+		margin:20px 0px;
+	}
+	.item1, .item2 {
+		display: inline-block;
+	}
+	#submit-button {
+		background-color: pink;
+   		margin-bottom:20px;
+   		margin-top:5px;
+
+	}
+	.newJournal {
+		width:570px;
+		margin:0 auto;
+		margin-top: 20px;
+		color: grey;
+		display: none;
+	}
+	.box {
+		width:570px;
+		background-image: url('paper.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:100%;
+		text-align: auto;
+	}
+	textarea {
+		width:340px;
+		height: 230px;
+	}
+	.textcolor:focus{
+    color:rgb(232,140,122)
+	}
+	p {
+		color: grey;
+	}
+	h2 {
+		color: pink;
+	}
+	#search {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	#back-button {
+	margin:0 auto;
+		margin-left:20px;
+	}
+	#show-button, #search-btn, #back-button, #submit-button {
+		height:25px;
+		background-color: rgb(255,237,241);
+		font-family: arial;
+		color:grey;
+		border-radius: 7px;
+	}
+	#search {
+		font-family: arial;
+		color:grey;
+		border-radius: 7px;
+	}
+	#show-button {
+		margin:0 auto;
+	}
+	.btn1 {
+
+	}
+	</style>
+<!--Style Css end-->
+
+<div> 
+	<input id="search" name="search" placeholder="Search" type="text">
+	<button id="search-btn">search</button>
+</div>	
+
+<form id='test-form'>
+	<div class="container">
+
+		<h1>My Journal</h1>
+		<div class="item1">
+			<br> <input type="text" name="title" placeholder="title" class='textcolor'>
+		</div>		
+		<div class="item2">
+			<br> <input type="text" name="user" placeholder="name" class='textcolor'>
+		</div>
+		<div class="item">
+			<br> <textarea type="text" name="Content" placeholder="Content" class='textcolor'></textarea><br>
+		</div>
+		<div class="item">
+			<br> <input type="text" name="tag" placeholder="#Tag" class='textcolor'>
+		</div>
+
+		<button id="submit-button">Submit!</button><br>
+	</div>
+<i class="fa fa-envelope"></i>
+</form>
+
+<div class="newJournal"></div>
+<!--back button-->
+	<button id="back-button">Back</button>
+<!--View Journal button-->
+	<button id="show-button">View Journals</button>
+</div>
+
+
+	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/journal2.js"></script>
+	<script type="text/javascript" src="js/vendor/tagging.min.js"></script>
+
+</body>
+
+<!-- REVIEW -->
+<!-- You're missing the closing html tag </html>, also, your own code (journal2.js in this case) should always come at bottom (below tagging.min.js in this case). Also, the reason why we have named our html files index.html is because when browsers visit a domain (i.e., the url doesn't end with a file extension like .html) it will look for a document named index.html This means that naming your files index1.html and index2.html wouldn't work the way it's intended -->
